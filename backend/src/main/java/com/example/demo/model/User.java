@@ -35,5 +35,6 @@ public class User {
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "user_available_slots", joinColumns = @JoinColumn(name = "user_id"))
+    @OrderColumn(name = "slot_order")
     private List<AvailableSlot> availableSlots = new ArrayList<>();
 }
