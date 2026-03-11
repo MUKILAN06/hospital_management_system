@@ -1,0 +1,12 @@
+backend/target/*
+backend/!.mvn/wrapper/maven-wrapper.jar
+backend/!target/*.jar
+*~
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore frontend since this dockerfile is for backend
+frontend/
+node_modules/
